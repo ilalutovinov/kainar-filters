@@ -271,6 +271,89 @@ a img:hover {
 }
 
 
+/* --- СЕКЦИЯ --- */
+.features-section {
+    padding: 10px 20px;
+    background-color: transparent; 
+}
+
+/* --- КОНТЕЙНЕР --- */
+.features-container {
+    max-width: 1100px; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+}
+
+/* --- КАРТОЧКА --- */
+.feature-card {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 1px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* --- НОВЫЙ КОНТЕЙНЕР ДЛЯ ИКОНКИ И ЗАГОЛОВКА --- */
+.feature-header {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 15px;
+    gap: 12px; /* Расстояние между иконкой и текстом */
+}
+
+.feature-icon {
+    width: 35px; /* Немного меньше для лучшего вида в строке */
+    height: 35px;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    margin: 0; /* Убираем лишние отступы */
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    font-family: sans-serif;
+}
+
+/* --- ТЕКСТ --- */
+.feature-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: sans-serif;
+}
+
+/* --- АДАПТИВ --- */
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- КАРТОЧКА --- */
+.feature-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    
+    /* ДОБАВЛЕНО: Плавная анимация для увеличения и тени */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* --- ЭФФЕКТ ПРИ НАВЕДЕНИИ (НОВОЕ) --- */
+.feature-card:hover {
+    transform: scale(1.03); /* Чуть-чуть увеличиваем карточку (на 3%) */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Делаем тень чуть больше и заметнее */
+}
+
 .reviews-wrapper { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
 .reviews-title { font-size: 36px; margin-bottom: 30px; }
 
@@ -297,8 +380,119 @@ a img:hover {
     .reviews-grid { grid-template-columns: 1fr; }
 }
 
+/* Контейнер-подложка как на фото 1 */
+.reviews-container {
+    background-color: #ffffff;
+    max-width: 1200px; /* или ваш размер */
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px; /* скругление углов */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* легкая тень для объема */
+}
+
+/* Удалите margin из .reviews-wrapper, так как теперь отступы у контейнера */
+.reviews-wrapper { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+
+.reviews-title { font-size: 36px; margin-bottom: 30px; }
+
+.reviews-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-bottom: 40px;
+}
+
+/* Остальные стили можно оставить без изменений */
+.review-text { font-size: 14px; line-height: 1.5; color: #333; margin-bottom: 20px; }
+.reviewer { display: flex; align-items: center; font-weight: 600; }
+.avatar { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; object-fit: cover; }
+.btn-review { 
+    background-color: #4a90e2; color: #fff; padding: 15px 30px; 
+    text-decoration: none; border-radius: 5px; font-weight: bold; 
+    display: inline-block; 
+}
+
+@media (max-width: 768px) {
+    .reviews-container { padding: 20px; }
+    .reviews-grid { grid-template-columns: 1fr; }
+}
 
 
 
+.reviews-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Белый фон */
+    padding: 50px;             /* Внутренние отступы */
+    border-radius: 10px;       /* Закругление углов */
+    height: 370px; /* Блок будет ровно 300 пикселей */
+}
+
+.reviews-wrapper {
+    max-width: 1020px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    
+    /* Регулируй эти значения: */
+    padding: 30px 40px; /* 60px сверху/снизу, 40px слева/справа */
+    
+    border-radius: 15px;
+}
 
 
+/* 1. Регулировка отступа после хлебных крошек */
+.breadcrumbs {
+    margin-bottom: 10px !important; /* Уменьшаем расстояние до заголовка "Отзывы" */
+}
+
+/* 2. Регулировка отступа после самого заголовка "Отзывы" */
+.reviews-title {
+    font-size: 36px;
+    margin-bottom: 20px; /* Уменьшаем расстояние между заголовком и карточками */
+    margin-top: 0;       /* Убираем лишний верхний отступ, если он есть */
+}
+
+.contacts-map-title {
+    font-size: 36px;
+    margin-bottom: 200px; /* Уменьшаем расстояние между заголовком и карточками */
+    margin-top: 0;       /* Убираем лишний верхний отступ, если он есть */
+}
+
+
+.reviews-wrapper2 {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Белый фон */
+    padding: 50px;             /* Внутренние отступы */
+    border-radius: 10px;       /* Закругление углов */
+    height: 280px; /* Блок будет ровно 300 пикселей */
+}
+
+.reviews-wrapper2 {
+    max-width: 1020px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    
+    /* Регулируй эти значения: */
+    padding: 40px 40px; /* 60px сверху/снизу, 40px слева/справа */
+    
+    border-radius: 15px;
+}
+
+
+/* 2. Регулировка отступа после самого заголовка "Отзывы" */
+.reviews-title2 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Уменьшаем расстояние между заголовком и карточками */
+    margin-top: 0;       /* Убираем лишний верхний отступ, если он есть */
+}
+
+.contacts-map-title {
+    font-size: 36px;
+    margin-bottom: 200px; /* Уменьшаем расстояние между заголовком и карточками */
+    margin-top: 0;       /* Убираем лишний верхний отступ, если он есть */
+}
