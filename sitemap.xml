@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная -->
+  <url>
+    <loc>https://ilalutovinov.github.io/kainar-filters</loc>
+    <priority>1.0</priority>
+  </url>
+  <!-- Продукция -->
+  <url>
+    <loc>https://ilalutovinov.github.io/kainar-filters/catalog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- Отзывы -->
+  <url>
+    <loc>https://ilalutovinov.github.io/kainar-filters/reviews.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <!-- Контакты -->
+  <url>
+    <loc>https://ilalutovinov.github.io/kainar-filters/contacts.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
