@@ -53,17 +53,17 @@ body {
     position: absolute;
     bottom: 170px;
     left: 70px;
-    background-color: #0c2d58;
+    background-color: #4a90e2;  
     color: #fff;
     padding: 15px 17px;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
 }
-.hero-btn:hover { background-color: #0a2444; }
+.hero-btn:hover { background-color: #357abd; }
 
 /* --- БЛОК КОНТАКТОВ С КАРТОЙ --- */
 .contacts-wrapper {
@@ -700,7 +700,7 @@ a img:hover {
 }
 
 .buy-btn {
-    background-color: #4a90e2;
+    background-color: #4a90e2; 
     color: #fff;
     border: none;
     padding: 12px;
@@ -1064,4 +1064,132 @@ a img:hover {
 .buy-btn:hover {
     color: white !important;
     text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+.about-section {
+    background-color: #ffffff;      /* Белый фон, как в блоке контактов */
+    padding: 35px 40px;            /* Отступы внутри, как в подвале */
+    border-radius: 10px;           /* Скругление углов, как везде */
+    max-width: 1100px;             /* Ограничение ширины */
+    margin: 20px auto;             /* Центрирование на странице */
+    box-sizing: border-box;        /* Чтобы отступы не ломали ширину */
+    line-height: 1.4;              /* Комфортное чтение текста */
+}
+
+.about-section h2 {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+
+.about-section h3 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+}
+
+.about-section ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}
+
+
+.services-section {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin: 25px 0 15px 0;
+}
+
+/* Убираем верхний отступ у первого заголовка */
+.services-section h2:first-child {
+    margin-top: 0;
+}
+
+.services-section p {
+    margin-bottom: 15px;
+}
+
+.services-section ul, 
+.services-section ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.services-section li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Контейнер блока */
+.popular-products-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Заголовок блока */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Ссылка "Перейти в каталог" */
+.catalog-link-wrapper {
+    text-align: right; /* Как на референсе, прижата к правому краю */
+    margin-top: 20px;
+}
+
+.catalog-more-link {
+    color: #3b82f6; /* Ваш фирменный синий */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.catalog-more-link:hover {
+    opacity: 0.8;
+}
+
+
+.popular-products-section {
+    
+    /* 1. Уменьшаем внутренние отступы, чтобы контент "растянулся" */
+    /* Было 40px, ставим 20px сверху/снизу и 20px по бокам */
+    padding: 15px 1px; 
+    margin: 20px auto;
+    box-sizing: border-box;
 }
