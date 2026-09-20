@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Главная -->
   <url>
-    <loc>https://ilalutovinov.github.io/kainar-filters</loc>
+    <loc>https://filters-kainar.com/</loc>
     <priority>1.0</priority>
   </url>
   <!-- Продукция -->
   <url>
-    <loc>https://ilalutovinov.github.io/kainar-filters/catalog.html</loc>
+    <loc>https://filters-kainar.com/catalog.html</loc>
     <priority>0.8</priority>
   </url>
   <!-- Отзывы -->
   <url>
-    <loc>https://ilalutovinov.github.io/kainar-filters/reviews.html</loc>
+    <loc>https://filters-kainar.com/reviews.html</loc>
     <priority>0.7</priority>
   </url>
   <!-- Контакты -->
   <url>
-    <loc>https://ilalutovinov.github.io/kainar-filters/contacts.html</loc>
+    <loc>https://filters-kainar.com/contacts.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
